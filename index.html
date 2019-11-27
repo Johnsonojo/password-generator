@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <fieldset class="password-info">
+        <h3 class="title">Password Generator</h3>
+        <div class="printout">
+          <span class="password-input" id="password-result"></span>
+          <button class="password-copy" id="clipboard">copy</button>
+        </div>
+        <br>
+        <div class="password-length">
+          <span class="col-8">Enter password length</span>
+          <input type="number" name="" id="password-length" class="col-1" min="6" max="30" value="20">
+        </div>
+        <br>
+        <div class="password-option">
+          <span class="col-8">Add uppercase letters</span>
+          <input class="col-1" type="checkbox" name="" id="uppercase" checked>
+        </div>
+        <div class="password-option">
+          <span class="col-8">Add lowercase letters</span>
+          <input class="col-1" type="checkbox" name="" id="lowercase" checked>
+        </div>
+        <div class="password-option">
+          <span class="col-8">Add numbers</span>
+          <input class="col-1" type="checkbox" name="" id="digits" checked>
+        </div>
+        <div class="password-option">
+          <span class="col-8">Add special characters</span>
+          <input class="col-1" type="checkbox" name="" id="symbols" checked>
+        </div>
+        <br>
+        <div class="generate-button">
+          <button class="password-gen" id="submit-btn">Generate Password</button>
+        </div>
+      </fieldset>
+
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
